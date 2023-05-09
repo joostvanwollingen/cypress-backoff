@@ -1,0 +1,16 @@
+{
+  "name": "cypress-exponential-backoff",
+  "version": "1.0.0",
+  "description": "Apply different timeouts to retried tests",
+  "main": "index.js",
+  "author": "Joost van Wollingen",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joostvanwollingen/cypress-exponential-backoff.git"
+  },
+  "bugs": {
+    "url": "https://github.com/joostvanwollingen/cypress-exponential-backoff/issues"
+  },
+  "homepage": "https://github.com/joostvanwollingen/cypress-exponential-backoff#readme"
+}
