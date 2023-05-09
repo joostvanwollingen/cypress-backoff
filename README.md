@@ -1,4 +1,4 @@
-# cypress-exponential-backoff
+# cypress-backoff
 
 [![npm version](https://badge.fury.io/js/cypress-exponential-backoff.svg)](https://badge.fury.io/js/cypress-exponential-backoff)
  
