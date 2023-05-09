@@ -1,6 +1,6 @@
 # cypress-backoff
 
-[![npm version](https://badge.fury.io/js/cypress-exponential-backoff.svg)](https://badge.fury.io/js/cypress-exponential-backoff)
+[![npm version](https://badge.fury.io/js/cypress-backoff.svg)](https://badge.fury.io/js/cypress-backoff)
  
 Convience library to apply different timeout strategies to retried tests. [Inspired by Filip Hric](https://www.linkedin.com/posts/filip-hric_you-can-gradually-increase-timeout-when-your-activity-7061687901197094912-pOZT?utm_source=share&utm_medium=member_desktop).
 
@@ -11,7 +11,7 @@ This repository is not maintained by the Cypress developers.
 1. Install the module.
 
     ```shell
-    npm install cypress-exponential-backoff
+    npm install cypress-backoff
     ```
 
 2. Add the retries to `cypress.config.js`.
@@ -26,7 +26,7 @@ This repository is not maintained by the Cypress developers.
 3. Import the module
 
     ```javascript
-    const backoff = require('cypress-exponential-backoff')
+    const backoff = require('cypress-backoff')
     ```
 
 4. Add your preferred timeout and strategy in the beforeEach block of your test
