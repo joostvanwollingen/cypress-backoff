@@ -42,7 +42,7 @@ This repository is not maintained by the Cypress developers.
 ## linear
 Provide the desired timeout increase in milliseconds.
 
-The timeout will increase with this number for every next attepmpt, i.e. 1000, 2000, 3000...
+The timeout will increase with this number for every next attempt, i.e. 1000, 2000, 3000...
 
 ```javascript
 backoff.linear(1000)
