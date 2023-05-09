@@ -51,11 +51,12 @@ backoff.linear(1000)
 ## exponential
 Provide the desired timeout in milliseconds and exponential rate as an integer.
 
-The timeout will be calculated as $$ T = timeout * exponentialrate^retries
+The timeout will be calculated as $T = timeout * exponentialrate^r$
 
 ```javascript
 backoff.exponential(1000, 2)
 ```
+
 ## fixed
 Provide an array with the desired timeout for each subsequent retry. If you allow more retries than elements specified the last element will be used.
 
@@ -71,7 +72,7 @@ backoff.fibonacci(1000)
 ```
 
 ## polynomial
-The timeout will be calculated as $$ T = timeout * retries^exponent
+The timeout will be calculated as $T = timeout * retries^e$
 
 ```javascript
 backoff.polynomial(1000, 2)
