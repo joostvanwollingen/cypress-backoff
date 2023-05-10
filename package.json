@@ -5,6 +5,9 @@
   "main": "index.js",
   "author": "Joost van Wollingen",
   "license": "MIT",
+  "scripts": {
+    "test": "npx cypress run"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/joostvanwollingen/cypress-backoff.git"
