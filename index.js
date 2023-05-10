@@ -13,18 +13,15 @@ module.exports = {
         setDefaultCommandTimeout(timeoutInMilliseconds * (1 + Cypress.currentRetry))
     },
     exponential(timeoutInMilliseconds, exponentialRate) {
-        setDefaultCommandTimeout(timeoutInMilliseconds * Math.pow(exponentialRate, 1 + Cypress.currentRetry))
+        setDefaultCommandTimeout(timeoutInMilliseconds * Math.pow(exponentialRate, Cypress.currentRetry))
     },
     fixed(timeouts) {
         setDefaultCommandTimeout(timeouts[Cypress.currentRetry] ? timeouts[Cypress.currentRetry] : timeouts[timeouts.length - 1])
     },
     fibonacci(timeoutInMilliseconds) {
-        setDefaultCommandTimeout(binet(1 + Cypress.currentRetry) * timeoutInMilliseconds)
+        setDefaultCommandTimeout(binet(Cypress.currentRetry) * timeoutInMilliseconds)
     },
     custom(fun) {
-        setDefaultCommandTimeout(fun(1 + Cypress.currentRetry))
+        setDefaultCommandTimeout(fun(Cypress.currentRetry))
     },
-    polynomial(timeoutInMilliseconds, exponent) {
-        setDefaultCommandTimeout(timeoutInMilliseconds * Math.pow(1 + Cypress.currentRetry, exponent))
-    }
 }

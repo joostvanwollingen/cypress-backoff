@@ -71,13 +71,6 @@ Provide the desired timeout which will be multiplied by the fibonacci number of 
 backoff.fibonacci(1000)
 ```
 
-## polynomial
-The timeout will be calculated as $T = timeout * retries^e$
-
-```javascript
-backoff.polynomial(1000, 2)
-```
-
 ## custom
 Provide a custom function that accepts the retry count as a parameter and returns the desired timeout.
 
