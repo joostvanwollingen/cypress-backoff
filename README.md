@@ -1,6 +1,6 @@
 # cypress-backoff
 
-![npm](https://img.shields.io/npm/v/cypress-backoff)
+[![npm](https://img.shields.io/npm/v/cypress-backoff)](https://www.npmjs.com/package/cypress-backoff)
  
 Convience library to apply different timeout strategies to retried tests. [Inspired by Filip Hric](https://www.linkedin.com/posts/filip-hric_you-can-gradually-increase-timeout-when-your-activity-7061687901197094912-pOZT?utm_source=share&utm_medium=member_desktop).
 
