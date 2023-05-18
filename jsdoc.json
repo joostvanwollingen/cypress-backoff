@@ -1,0 +1,51 @@
+{
+    "tags": {
+        "allowUnknownTags": false
+    },
+    "source": {
+        "includePattern": "index.js",
+        "excludePattern": "(node_modules/|docs|cypress/)"
+    },
+    "plugins": [
+        "plugins/markdown"
+    ],
+    "opts": {
+        "template": "assets/template/docdash/",
+        "encoding": "utf8",
+        "destination": "docs/",
+        "recurse": true,
+        "verbose": true
+    },
+    "templates": {
+        "cleverLinks": false,
+        "monospaceLinks": false
+    },
+    "docdash": {
+        "static": true,
+        "sort": false,
+        "meta": {
+            "description": "A cypress plugin to apply different timeouts to retried tests"
+        },
+        "search": false,
+        "commonNav": false,
+        "collapse": false,
+        "wrap": false,
+        "typedefs": false,
+        "navLevel": 0,
+        "private": false,
+        "removeQuotes": "none",
+        "scripts": [],
+        "ShortenTypes": false,
+        "menu": {
+            "Github": {
+                "href": "https://github.com/joostvanwollingen/cypress-backoff",
+                "target": "_blank",
+                "class": "menu-item",
+                "id": "website_link"
+            }
+        },
+        "scopeInOutputPath": false,
+        "nameInOutputPath": false,
+        "versionInOutputPath": false
+    }
+}

@@ -1,2 +1,5 @@
 node_modules
 cypress/videos
+cypress/screenhots
+docs/
+.DS_Store

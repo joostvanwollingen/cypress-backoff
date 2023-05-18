@@ -6,7 +6,7 @@ Convience library to apply different timeout strategies to retried tests. [Inspi
 
 This repository is not maintained by the Cypress developers. 
 
-## Installation & usage
+# Installation & usage
 
 1. Install the module.
 
@@ -77,3 +77,7 @@ Provide a custom function that accepts the retry count as a parameter and return
 ```javascript
 backoff.custom((retryCount) => {return retryCount*2000})
 ```
+
+# JSDoc function documentation
+
+The documentation of each of the functions can be found [here](https://joostvanwollingen.github.io/cypress-backoff).
